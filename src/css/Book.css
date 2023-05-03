@@ -1,0 +1,30 @@
+.cf { zoom: 1 }
+.cf { zoom: 1 }
+.cf:before, .cf:after { content: ""; display: table; display: block; font-size: 0; height: 0; line-height: 0; clear: both; visibility: hidden }
+.cf:after { clear: both }
+.channelWrap {  background: #fff; border-radius: 6px; margin: 16px }
+.channelWrap.channelBanner { padding-bottom: 14px }
+.classTable { font-size: 14px }
+.classTable .rank { width: 60px; }
+.classTable .rank i { float: inherit; margin: 0; color: #fff }
+.classTable .style { width: 100px; }
+.classTable .name { width: 250px; }
+.classTable .name a, .classTable .chapter a { max-width: 90% }
+.classTable .author { width: 120px }
+.classTable .word { width: 80px; padding-right: 15px }
+.so_tag { /*padding: 4px 14px 0;*/  font-size: 14px; padding: 5px 0 }
+.so_tag li { padding: 0 0 24px; /*border-bottom: 1px solid #eee*/ }
+.so_tag li:last-child { padding: 0 0 4px }
+.so_tag li .tit, .so_tag li a { line-height: 1; padding: 3px 7px; margin-right: 12px }
+.so_tag li .tit { color: #999 }
+.so_tag li a.on, .so_tag li a:hover { color: #f70 }
+.so_tag li .so_girl { display: inline-block }
+.so_tag li .so_boy { display: inline-block/*; margin: 8px 0 0 140px;*/ }
+.on .icon_check { display: block }
+.list { padding-top: 20px }
+li {list-style-type:none;}
+a {
+ text-decoration:none;
+  color: #1D1D1D;
+}
+
