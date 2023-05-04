@@ -12,19 +12,21 @@ export function checkCollection(id,list){
     }
   }
 )
-  console.log(check)
 return check;
 
 }
 export async function getCollection(){
   let data=[]
   await api.get(
-    '/userBookShelf/',
+    '/userBookShelf/info',
     {params:{
         userId:SessionStorage.getItem("userinfo").userId
       }}
   ).then(res=>{
-    data=res.data.data
+    console.log(res.data)
+    if(res.data.data!==null&&res.data.data!==undefined){
+      data=res.data.data
+    }
   })
   return data
 }

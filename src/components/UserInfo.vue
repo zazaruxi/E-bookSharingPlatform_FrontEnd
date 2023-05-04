@@ -120,7 +120,7 @@
                  filled
                  lazy-rules
                  :type="isPwd ? 'password' : 'text'"
-                 label="Ensure Password">
+                 label="Old Password">
 
           <template v-slot:append>
             <q-icon
@@ -130,7 +130,9 @@
             />
           </template>
         </q-input>
+        <q-btn @click="password"  class="bg-secondary">Save</q-btn>
       </div>
+
     </q-card>
   </q-dialog>
 </template>
@@ -181,7 +183,7 @@ this.$q.notify({
   return;
       }
       api.put(
-        'user/common/paasword',
+        'user/common/password',
         {},
         {params:{
             userId:this.userInfo.userId,
@@ -192,6 +194,11 @@ this.$q.notify({
           if(res.data.code===200){
             this.userInfo=res.data.data
             this.$store.commit('example/setLoginUser',res.data.data)
+            this.$q.notify({
+              message:"edit success",
+              position:"top",
+              type:"positive"
+            })
           }else {
             this.$q.notify({
               message:"edit failed",

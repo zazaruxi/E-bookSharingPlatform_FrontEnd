@@ -193,7 +193,6 @@ export default {
           })
           return;
         }
-
         let id = checkCollection(book.bookdata.bookId, collec.list)
         if (id !== null) {
           api.delete(
